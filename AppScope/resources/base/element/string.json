@@ -2,7 +2,43 @@
   "string": [
     {
       "name": "app_name",
-      "value": "account_app"
+      "value": "Account Manager"
+    },
+    {
+      "name": "app_desc",
+      "value": "Modern account management application for HarmonyOS"
+    },
+    {
+      "name": "module_desc",
+      "value": "entry module"
+    },
+    {
+      "name": "MainAbility_desc",
+      "value": "Main Ability for Account Management"
+    },
+    {
+      "name": "MainAbility_label",
+      "value": "Account Manager"
+    },
+    {
+      "name": "welcome_title",
+      "value": "Welcome to Account Manager"
+    },
+    {
+      "name": "login_button",
+      "value": "Login"
+    },
+    {
+      "name": "register_button",
+      "value": "Register"
+    },
+    {
+      "name": "username_hint",
+      "value": "Enter username"
+    },
+    {
+      "name": "password_hint",
+      "value": "Enter password"
     }
   ]
 }

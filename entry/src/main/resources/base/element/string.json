@@ -2,203 +2,203 @@
   "string": [
     {
       "name": "module_desc",
-      "value": "module description"
+      "value": "Account Management Module for HarmonyOS 6.0.2"
     },
     {
-      "name": "EntryAbility_desc",
-      "value": "description"
+      "name": "MainAbility_desc",
+      "value": "Main Ability for Account Management Application"
     },
     {
-      "name": "EntryAbility_label",
-      "value": "label"
+      "name": "MainAbility_label",
+      "value": "Account Manager"
     },
     {
       "name": "month_expenses",
-      "value": "month_expenses"
+      "value": "Monthly Expenses"
     },
     {
       "name": "unit",
-      "value": "unit"
+      "value": "¥"
     },
     {
       "name": "month_no_expenses",
-      "value": "month_no_expenses"
+      "value": "No expenses this month"
     },
     {
       "name": "income_month",
-      "value": "income_month"
+      "value": "Monthly Income"
     },
     {
       "name": "month_no_income",
-      "value": "month_no_income"
+      "value": "No income this month"
     },
     {
       "name": "empty_tip",
-      "value": "empty_tip"
+      "value": "No records found"
     },
     {
       "name": "diet",
-      "value": "diet"
+      "value": "Food & Dining"
     },
     {
       "name": "healthy",
-      "value": "healthy"
+      "value": "Health Care"
     },
     {
       "name": "transport",
-      "value": "transport"
+      "value": "Transportation"
     },
     {
       "name": "house",
-      "value": "house"
+      "value": "Housing"
     },
     {
       "name": "snack",
-      "value": "snack"
+      "value": "Snacks"
     },
     {
       "name": "study",
-      "value": "study"
+      "value": "Education"
     },
     {
       "name": "communicate",
-      "value": "communicate"
+      "value": "Communication"
     },
     {
       "name": "social",
-      "value": "social"
+      "value": "Social Activities"
     },
     {
       "name": "investment_expenditure",
-      "value": "investment_expenditure"
+      "value": "Investment Expenses"
     },
     {
       "name": "shopping",
-      "value": "shopping"
+      "value": "Shopping"
     },
     {
       "name": "entertainment",
-      "value": "entertainment"
+      "value": "Entertainment"
     },
     {
       "name": "loan",
-      "value": "loan"
+      "value": "Loans"
     },
     {
       "name": "other_expenses",
-      "value": "other_expenses"
+      "value": "Other Expenses"
     },
     {
       "name": "salary",
-      "value": "salary"
+      "value": "Salary"
     },
     {
       "name": "bonus",
-      "value": "bonus"
+      "value": "Bonus"
     },
     {
       "name": "interest",
-      "value": "interest"
+      "value": "Interest"
     },
     {
       "name": "invest",
-      "value": "invest"
+      "value": "Investment Income"
     },
     {
       "name": "part_time",
-      "value": "part_time"
+      "value": "Part-time Income"
     },
     {
       "name": "red_envelope",
-      "value": "red_envelope"
+      "value": "Red Envelope"
     },
     {
       "name": "borrow",
-      "value": "borrow"
+      "value": "Borrowed Money"
     },
     {
       "name": "other_income",
-      "value": "other_income"
+      "value": "Other Income"
     },
     {
       "name": "expenditure",
-      "value": "expenditure"
+      "value": "Expenditure"
     },
     {
       "name": "income",
-      "value": "income"
+      "value": "Income"
     },
     {
       "name": "bill_amount",
-      "value": "bill_amount"
+      "value": "Bill Amount"
     },
     {
       "name": "statistics_details",
-      "value": "statistics_details"
+      "value": "Statistics Details"
     },
     {
       "name": "monthly_bill",
-      "value": "monthly_bill"
+      "value": "Monthly Bill"
     },
     {
       "name": "annual_bill",
-      "value": "annual_bill"
+      "value": "Annual Bill"
     },
     {
       "name": "home",
-      "value": "home"
+      "value": "Home"
     },
     {
       "name": "statistics",
-      "value": "statistics"
+      "value": "Statistics"
     },
     {
       "name": "back",
-      "value": "back"
+      "value": "Back"
     },
     {
       "name": "no_expenses",
-      "value": "no_expenses"
+      "value": "No Expenses"
     },
     {
       "name": "no_income",
-      "value": "no_income"
+      "value": "No Income"
     },
     {
       "name": "by_date",
-      "value": "by_date"
+      "value": "By Date"
     },
     {
       "name": "by_category",
-      "value": "by_category"
+      "value": "By Category"
     },
     {
       "name": "all_expenses",
-      "value": "all_expenses"
+      "value": "All Expenses"
     },
     {
       "name": "all_income",
-      "value": "all_income"
+      "value": "All Income"
     },
     {
       "name": "save",
-      "value": "save"
+      "value": "Save"
     },
     {
       "name": "make_another_note",
-      "value": "make_another_note"
+      "value": "Add Another Record"
     },
     {
       "name": "confirm",
-      "value": "confirm"
+      "value": "Confirm"
     },
     {
       "name": "cancel",
-      "value": "cancel"
+      "value": "Cancel"
     },
     {
       "name": "detail",
-      "value": "detail"
+      "value": "Details"
     }
   ]
 }

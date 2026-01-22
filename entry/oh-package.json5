@@ -1,10 +1,14 @@
 {
   "name": "entry",
   "version": "1.0.0",
-  "description": "Please describe the basic information.",
+  "description": "Account management application for HarmonyOS",
   "main": "",
-  "author": "",
-  "license": "",
-  "dependencies": {}
+  "author": "HarmonyOS Developer",
+  "license": "Apache-2.0",
+  "dependencies": {},
+  "devDependencies": {},
+  "harmony": {
+    "apiVersion": "4.0.10(10)",
+    "minAPIVersion": "4.0.0(9)"
+  }
 }
-

@@ -1,14 +1,15 @@
 {
   "name": "account_app",
   "version": "1.0.0",
-  "description": "Please describe the basic information.",
+  "description": "HarmonyOS Account Management Application",
   "main": "",
-  "author": "",
-  "license": "",
+  "author": "example",
+  "license": "Apache-2.0",
   "dependencies": {
-    "dayjs": "^1.11.7"
+    "dayjs": "^1.11.7",
+    "@kit.ArkUI": "^1.0.0"
   },
   "devDependencies": {
-    "@ohos/hypium": "1.0.6"
+    "@ohos/hypium": "^1.0.6"
   }
 }

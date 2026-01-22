@@ -21,6 +21,11 @@
         "startWindowIcon": "$media:icon",
         "startWindowBackground": "$color:start_window_background",
         "exported": true,
+        "launchType": "standard",
+        "orientation": "unspecified",
+        "supportWindowMode": ["fullscreen", "split", "floating"],
+        "maxWindowRatio": 3.5,
+        "minWindowRatio": 0.5,
         "skills": [
           {
             "entities": [
@@ -31,6 +36,16 @@
             ]
           }
         ]
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+        "reason": "Required for network operations",
+        "usedScene": {
+          "abilities": ["EntryAbility"],
+          "when": "inuse"
+        }
       }
     ]
   }

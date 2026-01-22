@@ -1,10 +1,17 @@
 {
   "app": {
-    "bundleName": "com.example.account_app",
+    "bundleName": "com.example.accountapp",
     "vendor": "example",
     "versionCode": 1000000,
     "versionName": "1.0.0",
     "icon": "$media:app_icon",
-    "label": "$string:app_name"
+    "label": "$string:app_name",
+    "description": "$string:app_desc",
+    "distributedNotificationEnabled": true,
+    "keepAlive": false,
+    "singleUser": false,
+    "minAPIVersion": 5,
+    "targetAPIVersion": 6,
+    "apiReleaseType": "Release"
   }
 }
