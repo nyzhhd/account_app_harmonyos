@@ -1,13 +1,176 @@
 # 记账助手 (鸿蒙ArkTs版)
 
-使用鸿蒙 ArkTs Stage 模型开发实现的记账助手App，数据使用鸿蒙本地关系型数据库进行独立存储，不依赖服务。
-已实现 "当月记账数据"，"添加记账"，"数据统计" 等功能.
+使用鸿蒙 ArkTS Stage 模型开发实现的记账助手App，数据使用鸿蒙本地关系型数据库进行独立存储，不依赖服务。
+已实现 "当月记账数据"，"添加记账"，"数据统计" 等功能。
 
 <div align="center">
 <img src="./preview.gif" width="390px" />
 </div>
 
-## 联系
+## 📋 项目特性
+
+### 🎯 核心功能
+- **当月记账数据管理** - 实时显示当月收支记录
+- **智能添加记账** - 支持收入/支出分类记录
+- **数据统计分析** - 自动计算收支平衡和分类统计
+- **本地数据存储** - 使用HarmonyOS关系型数据库独立存储
+
+### 🚀 技术架构
+- **ArkTS Stage模型** - 现代化应用架构
+- **响应式状态管理** - 使用@State/@Prop/@Link装饰器
+- **组件化开发** - 支持@Builder装饰器构建可复用组件
+- **TypeScript强类型** - 增强代码可维护性
+
+## 🔧 HarmonyOS 6.0.2 (API 22) 适配工作
+
+### 📊 版本兼容性配置
+项目已全面适配 **HarmonyOS 6.0.2 (API级别22)**，确保在最新系统上的最佳兼容性：
+
+```json5
+// build-profile.json5 配置
+{
+  "app": {
+    "compileSdkVersion": "6.0.2(22)",      // 编译时使用的SDK版本
+    "targetSdkVersion": "6.0.2(22)",       // 目标适配的API版本
+    "compatibleSdkVersion": "5.0.0(12)"    // 应用兼容的最低SDK版本
+  }
+}
+```
+
+### 🔄 架构升级
+- **从EntryAbility升级到MainAbility** - 采用Stage模型架构
+- **多窗口模式支持** - 支持fullscreen、split、floating窗口模式
+- **现代化生命周期管理** - 优化的应用启动和状态管理
+
+### 🛡️ 兼容性保障
+- **API级别检查** - 使用`deviceInfo.distributionOSApiVersion`进行兼容性判断
+- **@Available注解保护** - 使用注解保护新API调用
+- **渐进式功能启用** - 根据设备API级别动态启用新特性
+- **向后兼容** - 确保在API12+设备上的稳定运行
+
+### 📱 设备支持
+- **手机设备** - 全面适配各种屏幕尺寸
+- **平板设备** - 优化大屏显示体验
+- **多种窗口模式** - 支持分屏和浮动窗口
+
+## 🏗️ 项目结构
+
+```
+entry/src/main/ets/
+├── entryability/
+│   ├── MainAbility.ets          # 现代化入口能力 (Stage模型)
+│   └── EntryAbility.ets         # 传统入口能力 (兼容性)
+├── model/
+│   └── AccountModel.ets         # 数据模型和业务逻辑
+├── pages/
+│   └── Index.ets               # 主页面组件
+├── utils/
+│   ├── Logger.ets              # 增强日志系统
+│   └── SampleData.ets          # 示例数据管理
+└── components/                 # 可复用组件库
+```
+
+## 🚀 快速开始
+
+### 环境要求
+- **DevEco Studio**: 6.0.2 Release 或更高版本
+- **HarmonyOS SDK**: API 22 (HarmonyOS 6.0.2)
+- **Java**: OpenJDK 17
+
+### 构建和运行
+```bash
+# 清理构建
+hdc shell rm -rf /data/app/el1/bundle/public/com.example.accountapp
+
+# 重新安装
+hdc install entry/build/outputs/hap/debug/entry-debug.hap
+
+# 启动应用
+hdc shell aa start -a MainAbility -b com.example.accountapp
+```
+
+## 📊 性能优化
+
+### 内存管理
+- 优化的数据结构设计
+- 智能缓存机制
+- 及时的资源释放
+
+### 渲染性能
+- 组件级别的状态更新
+- 高效的列表渲染
+- 优化的布局计算
+
+## 🔒 权限配置
+
+应用需要以下权限以确保功能完整：
+```json
+{
+  "requestPermissions": [
+    {
+      "name": "ohos.permission.INTERNET",
+      "reason": "Required for network operations",
+      "usedScene": {
+        "abilities": ["MainAbility"],
+        "when": "inuse"
+      }
+    }
+  ]
+}
+```
+
+## 🧪 测试验证
+
+### 功能测试清单
+- ✅ 应用正常启动 (HarmonyOS 6.0.2兼容)
+- ✅ 主页面数据显示
+- ✅ 标签页切换功能
+- ✅ 统计信息计算
+- ✅ 示例数据加载
+- ✅ 响应式状态更新
+
+### 兼容性测试
+- ✅ HarmonyOS API 22 (6.0.2)
+- ✅ HarmonyOS API 12+ (5.0.0+) 向后兼容
+- ✅ 手机和平板设备
+- ✅ 多种窗口模式
+
+## 📈 开发计划
+
+### 短期目标 (v1.1)
+- [ ] 数据持久化存储优化
+- [ ] 图表可视化功能
+- [ ] 多货币类型支持
+- [ ] 数据导入导出功能
+
+### 长期目标 (v2.0)
+- [ ] 云同步功能
+- [ ] AI支出分析
+- [ ] 预算管理系统
+- [ ] 多用户支持
+
+## 📞 技术支持
+
+### 常见问题排查
+1. **SDK版本兼容性** - 确保使用DevEco Studio 6.0.2+和HarmonyOS SDK 6.0.2
+2. **权限配置检查** - 验证module.json5中的权限设置
+3. **日志输出分析** - 使用Logger.ets进行错误排查
+4. **设备兼容性验证** - 测试不同API级别的设备
+
+### API兼容性保护示例
+```typescript
+@Available({ minApiVersion: 'HarmonyOS 6.0.2' })
+function useNewFeature() {
+  // 仅当设备API≥22时执行此代码
+}
+
+// 运行时判断
+if (deviceInfo.distributionOSApiVersion >= 60000) {
+  // 调用HarmonyOS 6.0.2新特性
+}
+```
+
+### 联系信息
 > 提示：  
 > 本项目为作者首个自学harmonyOS开发项目，有很多不够完善的地方，后续会继续进行更新优化，勿喷.
 
@@ -15,6 +178,6 @@
 
 > ![](https://open.weixin.qq.com/zh_CN/htmledition/res/assets/res-design-download/icon16_wx_logo.png) *banggx* (Add please note account_app_harmonyos)
 
-# License
+## 📄 许可证
 
 [Apache License 2.0](LICENSE)
